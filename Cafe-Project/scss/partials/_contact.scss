@@ -1,0 +1,72 @@
+@use './colors';
+@use './typography' as t;
+@use './placeholders';
+
+.contact-section {
+    background-color: colors.$heading-white;
+    
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+.contact-section__title {
+    font-size: 4em;
+    color: colors.$dark-pink;
+    font-family: t.$heading-font;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    min-width: 60%;
+}
+    label,
+    input,
+    textarea,
+    option {
+        color: colors.$grey;
+        font-family: t.$main-font;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+    }
+    label {
+        width: 120px;
+    }
+    input {
+        width: 180px;
+    }
+    .field {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2em;
+        width: 100%;
+    }
+    .field__vertical {
+        flex-direction: column;
+        gap: 1em;
+      }
+      button {
+        @extend %paragraph;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: colors.$light-pink;
+        color: colors.$grey;
+        &:hover {
+          transform: scale(1.1);
+          background-color: colors.$dark-pink;
+        }
+      }
+}

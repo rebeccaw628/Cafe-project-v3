@@ -1,0 +1,113 @@
+@use './colors';
+@use './typography' as t;
+@use './placeholders';
+
+.reviews-section {
+    background-color: colors.$dark-pink;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+
+    .reviews-section__title {
+        font-size: 4em;
+        text-align: center;
+        color: colors.$heading-white;
+        letter-spacing: 2px;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        gap: 20px 20px;
+        padding-bottom: 50px;
+    }
+
+    .reviews__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 60px 10px 60px; 
+        width: 390px;
+        height: 30%;
+        border: 3px solid colors.$heading-white;
+    }
+    .reviews__text p {
+        font-family: t.$main-font;
+        font-optical-sizing: auto;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-style: italic;
+        font-variation-settings:
+        "wdth" 100;
+        text-align: center;
+        position: relative;
+    }
+    .quote {
+        font-size: 23px;
+        color: colors.$grey;
+        position: absolute;
+    }
+    .fa-quote-left {
+        left: -20px;
+    }
+    .fa-quote-right {
+        right: -18px;
+        bottom: -5px;
+    }
+    .name-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 420px;
+    }
+    .name-date p {
+        @extend %paragraph;
+        font-size: 1em;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings:
+                "wdth" 100;
+    }
+    .footer {
+        background-color: colors.$light-green;
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }    
+    .footer__text {
+        color: colors.$heading-white;
+        font-family: t.$main-font;
+        font-size: 1.4em;
+    }
+    .footer__mug-copyright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        margin-left: 150px;
+    }
+    .fa-mug-hot {
+        transform: scaleX(-1);
+    }
+    .footer__mug {
+        color: colors.$heading-white;
+        font-size: 2.5em;
+    }
+    .footer__instagram {
+        color: colors.$heading-white;
+        font-size: 3em;
+        margin-right: 150px;
+    }
+}
