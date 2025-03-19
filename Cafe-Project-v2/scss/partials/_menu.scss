@@ -1,0 +1,145 @@
+@use './colors';
+@use './placeholders';
+@use './typography' as t;
+
+.menu-section{
+    background-color: colors.$heading-white;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+.menu-section__heading {
+    font-size: 4em;
+    color: colors.$dark-pink;
+    font-family: t.$heading-font;
+    text-align: center;
+    padding: 4% 0;
+}
+details > summary {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    margin-left: 85px;
+    margin-bottom: 25px;
+    height: 20px;
+    width:87%;
+    background-color: colors.$light-pink;
+    border: none;
+    cursor: pointer;
+    font-family: t.$main-font;
+    color: colors.$grey;
+    font-size: 1.5em;
+    font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+    }
+  details p {
+    margin-top: 10px;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 85px;
+    width: 89%;
+    gap: 25px;
+  }
+  .food {
+    margin-bottom: 60px;
+  }
+  .drinks {
+    padding-bottom: 20px;
+  }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 480px;
+        gap: 1em;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: colors.$light-pink;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__img {
+        width: 350px;
+        height: 350px;
+        margin-top: 2px;
+    }
+    .dietary-notes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .dietary-signs i {
+        vertical-align: middle;
+    }
+    .dietary-signs__text {
+        @extend %paragraph;
+        font-size: 0.9em;
+        font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+    }
+    .dietary-signs {
+        color: colors.$dark-green;
+        font-size: 1.5em;
+    }
+    .pbs-card {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 575px;
+        gap: 1em;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: colors.$light-pink;
+        justify-content: center;
+        align-items: center;
+    }
+    .pbs-card__img {
+        width: 350px;
+        height: 350px;
+        margin-top: -50px;
+    }
+    .pbs-dietary {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .pbs-vegan {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .pbs-card__note {
+        color: colors.$dark-green;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .pbs-card__note {
+        @extend %paragraph;
+        font-size: 1em;
+        font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        padding-bottom: 3%;
+    }

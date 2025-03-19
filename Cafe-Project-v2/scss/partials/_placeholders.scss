@@ -1,0 +1,7 @@
+@use './colors';
+@use './typography' as t;
+
+%paragraph {
+    font-family: t.$main-font;
+    color: colors.$grey;
+}

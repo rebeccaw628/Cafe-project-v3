@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Rammetto+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d18dc06d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav">
+        <a><i class="fa-solid fa-mug-hot nav__link"></i></a> <!--wrap around a tag to make it clickable-->
+        <div class="nav__wrapper">
+            <a class="nav__link" href="#about">ABOUT</a> <!--okay not to include nav__wrapper in name as it's an element that doesn't have much relevance to the heirarchy -->
+            <a class="nav__link--margin-left" href="#contact">CONTACT</a> 
+        </div>
+    <header>
+        <section class="left text-area">
+            <div class="title-page">
+                <h1 class="title-page__text title-page__text--name">The Pink <br>Coffee Corner</br></h1>
+                <h2 class="title-page__text title-page__text--descrip">Best coffee in Melbourne</h2>
+                <a class="title-page__text title-page__text--reviews" href="#reviews">See reviews</a>
+            </div>
+        </section>
+        <div class="right"></div>
+         
+    </header>
+
+    <main>
+      <section class="menu-section">
+        <h1 class="menu-section__heading">Our Menu</h1>
+        <details>
+        <summary>Food</summary>
+        <div class="dropdown food">
+            <article class="card">
+                <div>  
+                    <img class="card__img" src="./assets/raspberry_cupcake.jpg" alt="chocolate cupcake">
+                </div>
+                <h3 class="main-font">Chocolate Cupcake</h3>
+                <div class="dietary-notes">
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <p class="dietary-signs__text">Vegan</p>
+                </div>
+            </article>
+            <article class="card">
+                <div>  
+                    <img class="card__img" src="./assets/donuts.jpg" alt="donuts">
+                </div>
+                <h3 class="main-font">Donuts</h3>
+                <div class="dietary-notes">
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                    </div>
+                    <p class="dietary-signs__text">Gluten Free</p>
+                </div>
+                </article>
+            <article class="card">
+                <div>  
+                    <img class="card__img" src="./assets/raspberry_cupcake.jpg" alt="raspberry cupcake">
+                </div>
+                <h3 class="main-font">Raspberry Cupcake</h3>
+                <div class="dietary-notes">
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                        <p class="dietary-signs__text">Vegan</p>
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                    </div>
+                    <p class="dietary-signs__text">Gluten Free</p>
+                </div>
+            </article>
+            <article class="card">
+                <div>  
+                    <img class="card__img" src="../assets/vanilla_cake.jpg" alt="vanilla cupcake">
+                </div>
+                <h3 class="main-font">Vanilla Cake</h3>
+                <div class="dietary-notes">
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-egg"></i>
+                    </div>
+                    <p class="dietary-signs__text">Contains Eggs</p>
+                </div>
+            </article>
+            <article class="card">
+                <div>  
+                    <img class="card__img" src="./assets/cheesecake.jpg" alt="cheesecake">
+                </div>
+                <h3 class="main-font">Cheesecake</h3>
+                <div class="dietary-notes">
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-egg"></i>
+                    </div>
+                    <p class="dietary-signs__text">Contains Eggs</p>
+                    <div class="dietary-signs">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <p class="dietary-signs__text">Contains Dairy</p>
+                </div>
+            </article>
+        </details>
+        <details>
+            <summary>Drinks</summary>
+            <div class="dropdown drinks">
+                <article class="card">
+                    <div>  
+                        <img class="card__img" src="./assets/coffee.jpg" alt="coffee">
+                    </div>
+                    <h3 class="main-font">Flat White</h3>
+                    <div class="dietary-notes">
+                        <div class="dietary-signs">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <p class="dietary-signs__text">Vegan Options Available</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div>  
+                        <img class="card__img" src="./assets/green_smoothie.jpg" alt="green smoothie">
+                    </div>
+                    <h3 class="main-font">Green Smoothie</h3>
+                    <div class="dietary-notes">
+                        <div class="dietary-signs">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <p class="dietary-signs__text">Vegan Options Available</p>
+                    </div>
+                </article>
+                <article class="pbs-card">
+                    <div>  
+                        <img class="pbs-card__img" src="./assets/peanut_smoothie.jpg" alt="peanut butter smoothie">
+                    </div>
+                    <h3 class="main-font">Peanut Butter Smoothie</h3>
+                    <div class="pbs-dietary">
+                        <div class="pbs-vegan">
+                            <div class="pbs-card__note">
+                                <div>
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                                <p>Vegan Options Available</p>
+                            </div>
+                        </div>
+                        <div class="pbs-nuts">
+                            <div class="pbs-card__note">
+                                <div>
+                                    <i class="fa-solid fa-hand-dots"></i>
+                                </div>
+                                <p>Contains Nuts</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+      </section>
+        
+    <section class="reviews-section" id="reviews"> 
+        <h1 class="reviews-section__title main-heading">Reviews</h1>
+        <div class="reviews">
+            <div class="reviews__text">
+                <div class="testimonial">
+                    <p><i class="fa-solid quote fa-quote-left"></i>The Pink Coffee Corner is amazing! Cozy ambiance, perfect lattes, and friendly staff. The avocado toast is a must-try. Definitely coming back!.<i class="fa-solid quote fa-quote-right"></i></p>
+                </div>
+                
+                <div class="name-date">
+                    <div class="name">
+                        <p>Sarah L.</p>
+                    </div>
+                    <div class="date">
+                        <p>8th July 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews__text">
+                <p><i class="fa-solid quote fa-quote-left"></i>Great spot for coffee lovers. Smooth flat white and delicious cake. It can get crowded at lunchtime, but worth the visit for the quality and friendly service.<i class="fa-solid quote fa-quote-right"></i></p>
+                <div class="name-date">                    
+                    <div class="name">
+                        <p>John M.</p>
+                    </div>
+                    <div class="date">
+                        <p>8th July 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__text">
+                <p><i class="fa-solid quote fa-quote-left"></i>The Pink Coffee Corner is my favorite! Perfect mocha, tasty almond croissant, and a welcoming atmosphere. Free Wi-Fi is a bonus. Can't wait to return!<i class="fa-solid quote fa-quote-right"></i></p>
+                <div class="name-date">
+                    <div class="name">
+                        <p>Jenny B.</p>
+                    </div>
+                    <div class="date">
+                        <p>4th June 2023</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    <footer class="footer">
+        <div class="footer__mug-copyright">
+            <div class="footer__mug">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <p class="footer__text">Copyright 2024</p>
+        </div>
+        <div class="footer__instagram">
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+    </footer>
+    </section>
+    <section class="contact-section" id="contact">
+        <h1 class="contact-section__title">Contact</h1>
+        <form class="form">
+            <div class="field">
+                <label>First Name</label>
+                <input type="text" required minlength="2"/>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" required/>
+            </div>
+            <div class="field">
+                <label>Select Element</label>
+                <select required>
+                    <option value="" disabled selected>Please select a topic</option>
+                    <option value="bookings">Bookings</option>
+                    <option value="online-orders">Online orders</option>
+                    <option value="complaints">Complaints</option>
+                    
+                </select>
+              </div>
+            <div class="field field__vertical">
+                <label>Message</label>
+                <textarea rows="5" required></textarea>
+            </div>
+            <div class="field">
+                <button>Submit</button>
+            </div>
+          </form>
+    </section>
+</main>
+    
+</body>
+</html>
